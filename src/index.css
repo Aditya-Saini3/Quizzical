@@ -190,18 +190,19 @@ body {
 
 @media (max-width: 480px) {
   .quiz-container, .intro-page {
-    padding: 5em;
+    padding: 4em;
   }
+
 
   .startPageForm {
     width: 100%;
   }
 
   .option-container {
-    gap: 2em;
+    flex-direction: column;
   }
   .option {
-    padding: 0.3rem 0.4rem;
+    padding: 1rem;
   }
 
   .blob {
@@ -213,6 +214,10 @@ body {
 }
 
 @media (max-width: 350px) {
+  .quiz-container, .intro-page {
+    padding: 1.5em;
+  }
+
   :root {
     --fs-questions: 1.8rem;
     --fs-answers: 1rem
